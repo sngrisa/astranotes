@@ -1,0 +1,33 @@
+.btn-addList {
+    display: block !important;
+    font-size: 1.4rem !important;
+    font-weight: 400 !important;
+    cursor: pointer;
+    background-color: black !important;
+    text-align: left !important;
+    color: whitesmoke !important;
+    width: 20%;
+    margin-left: 1rem;
+}
+
+.btn-addList:hover {
+    background-color: #c4c9cc !important;
+    color: #4d4d4d !important;
+}
+
+.icon-add-task {
+    display: inline-block;
+    margin-right: 2%;
+}
+
+.btn-confirm {
+    cursor: pointer;
+    background-color: #003e62 !important;
+    width: 200px;
+}
+
+.btn-cancel {
+    cursor: pointer;
+    background-color: crimson !important;
+    width: 200px;
+}

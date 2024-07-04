@@ -1,0 +1,35 @@
+.textContent {
+    background-color: transparent;
+    width: 82%;
+    height: 25.5px;
+    border: none;
+    color: black;
+    outline: none;
+    border-radius: 5px;
+    margin: 2px 0;
+}
+
+.contentCard {
+    text-indent: 4px;
+}
+
+.contentCard:focus {
+    background-color: white;
+    width: 80%;
+    border: solid;
+    border-width: 2px;
+    border-color: rgb(0, 120, 255);
+    text-indent: 2px;
+    margin-right: 3%;
+}
+
+.deleteItem {
+    display: inline-block;
+    color: crimson;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.deleteItem:hover {
+    color: black;
+}

@@ -1,0 +1,32 @@
+:root {
+    font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #0079bf;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: inherit;
+    background: none;
+    border: none;
+    color: inherit;
+    padding: 0;
+    cursor: pointer;
+}
+
+:focus {
+    outline-color: #fa0;
+}
