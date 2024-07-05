@@ -6,11 +6,9 @@ import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 import { ListProject } from "../../interfaces/trelloList.interface";
 
 
-const ListLayout = () => {
+const ListLayout = ({listToDo , setListToDo }:{listToDo: ListProject[], setListToDo: any}) => {
 
-    let [listToDo, setListToDo] = useState<ListProject[]>([]);
-
-    let [idDelete, setIddelete] = useState<Number>(0);
+    let [idDelete, setIddelete] = useState<number>(0);
 
     let onDragEnd = (result: any) => {
         if (!result.destination) {

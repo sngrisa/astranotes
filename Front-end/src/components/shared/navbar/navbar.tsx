@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import "./navbar.scss";
 import { FaFlipboard } from "react-icons/fa";
-import { FaSearch } from "react-icons/fa";
 import { IoMdAdd } from "react-icons/io";
 import { FaInfoCircle } from "react-icons/fa";
 import Swal from 'sweetalert2';
 import { FaStickyNote } from "react-icons/fa";
-import InfoBar from '../../infoBar/infoBar';
 import { Project } from '../../interfaces/navbarItem.interface';
-import ItemBoard from './interfaces/itemBoard/ItemBoard';
+import ItemBoard from './itemBoard/ItemBoard';
 
 const Navbar = () => {
 
@@ -27,9 +25,9 @@ const Navbar = () => {
 
     const setProjectBuilder = (titleProject: any): void => {
         const newId: number | string = id + 1;
-        const newTitle: string = titleProject.substring(0, 1).toUpperCase() + titleProject.substring(1);
-        const urlTitle: string = String(titleProject).split(" ").join(".");
-        const newProject: Project = { id: newId, title: newTitle, type: false, favourite: false, url: `/${urlTitle.substring(0, 1).toLocaleLowerCase() + urlTitle.substring(1).toLocaleLowerCase()}` };
+        const newTitle: string = String(titleProject).substring(0,1).toUpperCase()+String(titleProject).substring(1);
+        const urlTitle: string = String(titleProject).replace(".", "");
+        const newProject: Project = { id: newId, title: newTitle, type: false, favourite: false, url: `/${urlTitle}`, list:[] };
         setId(newId);
         setTitle(newTitle);
         projects.push(newProject);

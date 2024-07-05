@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Project } from '../../../../interfaces/navbarItem.interface';
+import { Project } from '../../../interfaces/navbarItem.interface';
 import { RiAlignItemHorizontalCenterFill } from "react-icons/ri";
 import "./ItemBoard.scss";
 

@@ -8,13 +8,16 @@ import { Project } from '../interfaces/navbarItem.interface';
 
 
 
-const InfoBar = ({ projectDefaultProps }: { projectDefaultProps: Project }) => {
+const InfoBar = ({ projectDefaultProps, projectSaved, setSavedProject }: { projectDefaultProps: Project, projectSaved: Project, setSavedProject: any}) => {
 
     const [project, setProject] = useState<Project>(projectDefaultProps);
 
     useEffect(() => {
         setProject(projectDefaultProps);
+        
     }, [projectDefaultProps]);
+        
+    useEffect(()=>{setSavedProject(project)},[project])
 
     const setProjectTitle = (event: React.ChangeEvent<HTMLInputElement>): void => {
         event.preventDefault();

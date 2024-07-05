@@ -1,3 +1,5 @@
+import { ListProject } from "./trelloList.interface";
+
 export interface NavbarItemMenu {
     id?: string | number;
     title: string;
@@ -11,5 +13,5 @@ export interface Project {
     favourite: boolean;
     type: boolean;
     url?: string;
-    list?: Project[];
+    list?: ListProject[];
 }
